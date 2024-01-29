@@ -18,7 +18,8 @@ return new class extends Migration
             $table->string('roll')->nullable()->unique();
             $table->string('mobile')->nullable()->unique();
             $table->string('address')->nullable();
-            $table->tinyInteger('status')->default(1);
+//            $table->integer('added_by')->nullable();
+//            $table->tinyInteger('status')->default(1);
             $table->timestamps();
         });
     }
